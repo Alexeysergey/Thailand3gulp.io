@@ -1524,16 +1524,40 @@ div > label {
 .radio-point {
   position: relative;
 }
-
-.form__checkbox {
-  margin-right: 0;
+.form__checkbox{
+  appearance: none;
 }
+
+.form__checkbox + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+  border: 1px solid #255E93;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.form__checkbox:checked + label::before {
+  content: '';
+  display: block;     
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+  z-index: 5;
+}
+
 
 .form__inputs + label::before {
   content: '';
   display: block;
   position: absolute;
-  background: url(../img/radio-off.png);
+  background: url(../img/checkboxactive.png);
   width: 20px;
   height: 20px;
   left: -20px;
@@ -1544,7 +1568,7 @@ div > label {
   content: '';
   display: block;
   position: absolute;
-  background: url(../img/radio-active.svg);
+  background: url(../img/checkboxactive.png);
   width: 20px;
   height: 20px;
   left: -20px;
