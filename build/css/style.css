@@ -1527,6 +1527,32 @@ div > label {
 
 .form__checkbox {
   margin-right: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form__checkbox + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/checkbopassive.png);
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+}
+
+.form__checkbox:checked + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/checkboxactive.png);
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+  z-index: 5;
 }
 
 .form__inputs + label::before {
@@ -1932,6 +1958,32 @@ div > label {
 
 .form__checkbox {
   margin-right: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form__checkbox + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/checkbopassive.png);
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+}
+
+.form__checkbox:checked + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/checkboxactive.png);
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 0;
+  z-index: 5;
 }
 
 .form__inputs + label::before {

@@ -4047,6 +4047,10 @@ new Swiper('.image-slider', {
   spaceBetween: 54,
   loop: true,
   loopedSlides: 5,
+  autoplay: {
+    delay: 3000
+  },
+  speed: 800,
   breakpoints: {
     1000: {
       slidesPerView: 5,
