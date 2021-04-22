@@ -4048,7 +4048,11 @@ new Swiper('.image-slider', {
   loop: true,
   loopedSlides: 5,
   autoplay: {
+<<<<<<< HEAD
     delay: 3000
+=======
+    delay: 3000,
+>>>>>>> f79ea53756c28e30507dc7df59e44062e2e43231
   },
   speed: 800,
   breakpoints: {
@@ -4064,7 +4068,7 @@ new Swiper('.image-slider', {
       slidesPerView: 1,
       spaceBetweenSlides: 50
     }
-  }
+  } 
 });
 document.addEventListener("DOMContentLoaded", function () {
   var button = document.getElementById("header__burger");

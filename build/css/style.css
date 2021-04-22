@@ -1524,7 +1524,11 @@ div > label {
 .radio-point {
   position: relative;
 }
+.form__checkbox{
+  appearance: none;
+}
 
+<<<<<<< HEAD
 .form__checkbox {
   margin-right: 0;
   -webkit-appearance: none;
@@ -1532,22 +1536,38 @@ div > label {
           appearance: none;
 }
 
+=======
+>>>>>>> f79ea53756c28e30507dc7df59e44062e2e43231
 .form__checkbox + label::before {
   content: '';
   display: block;
   position: absolute;
+<<<<<<< HEAD
   background: url(../img/checkbopassive.png);
+=======
+>>>>>>> f79ea53756c28e30507dc7df59e44062e2e43231
   width: 20px;
   height: 20px;
   left: -20px;
   top: 0;
+<<<<<<< HEAD
+=======
+  border: 1px solid #255E93;
+box-sizing: border-box;
+border-radius: 5px;
+>>>>>>> f79ea53756c28e30507dc7df59e44062e2e43231
 }
 
 .form__checkbox:checked + label::before {
   content: '';
+<<<<<<< HEAD
   display: block;
   position: absolute;
   background: url(../img/checkboxactive.png);
+=======
+  display: block;     
+  position: absolute;
+>>>>>>> f79ea53756c28e30507dc7df59e44062e2e43231
   width: 20px;
   height: 20px;
   left: -20px;
@@ -1555,11 +1575,12 @@ div > label {
   z-index: 5;
 }
 
+
 .form__inputs + label::before {
   content: '';
   display: block;
   position: absolute;
-  background: url(../img/radio-off.png);
+  background: url(../img/checkboxactive.png);
   width: 20px;
   height: 20px;
   left: -20px;
@@ -1570,7 +1591,7 @@ div > label {
   content: '';
   display: block;
   position: absolute;
-  background: url(../img/radio-active.svg);
+  background: url(../img/checkboxactive.png);
   width: 20px;
   height: 20px;
   left: -20px;
